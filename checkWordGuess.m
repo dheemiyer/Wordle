@@ -4,7 +4,7 @@ function feedback = checkWordGuess(targetWord, guess)
     
     feedback = zeros(1, length(targetWord)); 
     
-    % Store which positions in targetWord have been "used" for yellow or green checks
+    % store positions in targetWord that are used in yellow or green checks
     usedInTarget = false(1, length(targetWord));
 
     % see if the guess is correct, and set it to the green value if it's
